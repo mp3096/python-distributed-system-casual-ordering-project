@@ -7,14 +7,14 @@ Causal Ordering: Ensures that messages are delivered in the causal order, preser
 Buffering: Implements a message buffer to hold messages that cannot be immediately delivered due to causal dependencies.
 Asynchronous Communication: Utilizes asynchronous tasks for handling incoming connections and message delivery.
 Fault Tolerance: Incorporates error handling mechanisms to handle connection failures and other exceptions gracefully.
-Use Cases
 
+Use Cases
 Distributed Systems: Suitable for building distributed applications where communication between multiple processes is required.
 Event Sourcing: Enables event sourcing architectures where events need to be ordered causally.
 Message Queues: Can be used as the foundation for building message queue systems with causal ordering support.
 
 Used:
-Python: Programming language used for implementing the messaging system.
+Python 3.10 
 Socket Programming: Utilized for establishing network connections between processes.
 Concurrency: Utilizes threading or asynchronous programming for handling multiple connections concurrently.
 Serialization: Implements serialization for transmitting message objects over the network.
