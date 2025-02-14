@@ -5,7 +5,7 @@ import time
 import random
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
-
+#fix 5000 msg issue concurrency? ram issue?
 
 class Main:
     def __init__(self, node_id):
@@ -61,7 +61,7 @@ class Main:
             self.handle_server_exception(e)
 
     def establish_peer_connections(self, addresses):
-        # establishes connections to all peers
+        # establishes connections to all peer
         for i, address in enumerate(addresses):
             if i != self.node_id:
                 self.try_peer_connection(address)
